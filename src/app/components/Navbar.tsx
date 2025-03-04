@@ -33,7 +33,7 @@ const Navbar = () => {
     }
 
     return (
-        <header className="sticky top-0 z-50 border-b">
+        <header className="sticky top-0 z-50 border-b bg-white">
             <nav aria-label="Main Navigation">
                 <div className="mx-auto flex max-w-7xl items-center justify-between p-4">
                     {/* Logo */}

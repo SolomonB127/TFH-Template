@@ -9,48 +9,49 @@ const dm = DM_Sans({ subsets: ["latin"] });
 const Advert = () => {
     return (
         <section 
-        aria-labelledby="advert-heading" 
-        className="relative w-full overflow-hidden"
+            aria-labelledby="advert-heading" 
+            className="relative w-full min-h-screen flex flex-col justify-center items-center bg-black"
         >
-            <div className="relative aspect-video md:aspect-[21/9]">
-                <div className="absolute inset-0 bg-black/50 z-10" />
-                    <Image
+            <div className="relative w-full h-full min-h-[500px] sm:min-h-[600px] md:min-h-[700px]">
+                <div className="absolute inset-0 bg-black/60 z-10" />
+                <img
                     src="/praise.png"
                     alt="A congregation worshipping together"
-                    fill
-                    className="object-cover"
+                    className="object-cover object-center w-full h-full"
                     loading="lazy"
-                    priority={false}
-                    />
-                    <div className="absolute inset-0 z-20 flex items-center justify-center p-4 sm:p-8">
-                    <div className="max-w-4xl mx-auto text-center text-white space-y-4 md:space-y-6">
+                />
+                <div className="absolute inset-0 z-20 flex items-center justify-center p-6 sm:p-8">
+                    <div className="w-full max-w-4xl text-center text-white space-y-4">
                         <h2 
-                        id="advert-heading" 
-                        className={`text-l md:text-3xl lg:text-4xl font-bold ${dm.className}`}
+                            id="advert-heading" 
+                            className={`text-2xl sm:text-3xl md:text-5xl font-bold leading-tight ${dm.className}`}
                         >
-                        Worship with Us Every Sunday
+                            Worship with Us Every Sunday
                         </h2>
                         
-                        <p className={`text-base md:text-xl lg:text-2xl ${sora.className}`}>
-                        Sundays - 9am to 12pm
+                        <p className={`text-lg sm:text-xl md:text-2xl ${sora.className}`}>
+                            Sundays - 9am to 12pm
                         </p>
 
                         <p 
-                        className={`${sora.className} text-xs md:text-lg lg:text-xl 
-                            max-w-3xl mx-auto leading-relaxed text-gray-200`}
+                            className={`${sora.className} text-sm sm:text-base md:text-lg 
+                                max-w-3xl mx-auto leading-relaxed text-gray-200 px-4 sm:px-6`}
                         >
-                        With the Father’s House Mobile App, you can access the church on the go. 
-                        Have access to daily devotionals, church events, announcements, and even 
-                        stream services online. Listen to the church’s podcast anywhere, all in one place!
+                            With the Father’s House Mobile App, you can access the church on the go. 
+                            Have access to daily devotionals, church events, announcements, and even 
+                            stream services online. Listen to the church’s podcast anywhere, all in one place!
                         </p>
 
-                        <Button 
-                        size="lg"
-                        className={`${sora.className} mt-4 md:mt-6 text-white bg-[#FF6634] hover:bg-[#ff835a] md:w-[280px] md:h-[60px] font-bold md:text-lg sm:w-[100px] sm:h-[30px] sm:text-base
-                            transition-colors duration-200`}
-                        >
-                        Get Directions
-                        </Button>
+                        <div className="flex justify-center pt-5">
+                            <Button 
+                                className={`${sora.className} w-full max-w-[280px] sm:w-[280px] 
+                                    h-12 sm:h-14 text-base sm:text-lg md:text-xl
+                                    text-white bg-[#FF6634] hover:bg-[#ff835a] font-bold 
+                                    transition-all duration-300`}
+                            >
+                                Get Directions
+                            </Button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -58,4 +59,4 @@ const Advert = () => {
     )
 }
 
-export default Advert
+export default Advert;

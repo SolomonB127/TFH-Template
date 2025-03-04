@@ -22,7 +22,6 @@ const Hero = () => {
                     className="w-full h-auto"
                     loading="lazy"
                 />
-                {/* Dark overlay to improve text contrast */}
                 <div className="absolute inset-0 bg-black opacity-50" aria-hidden="true"></div>
                 <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white">
                     <h2 id="hero-heading" className={`text-xl sm:text-xl md:text-4xl font-bold ${sora.className}`}>

@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import { Suspense } from "react";
+import { Loader2Icon } from "lucide-react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,8 +31,17 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Navbar />
-        {children}
+        <Suspense
+          fallback={
+            <div className="flex items-center justify-center min-h-screen">
+              <Loader2Icon className="animate-spin text-gray-800" size={48} />
+            </div>
+          }
+        >
+          <Navbar />
+            {children}
+          <Footer />
+        </Suspense>
       </body>
     </html>
   );

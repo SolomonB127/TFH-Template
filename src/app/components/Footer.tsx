@@ -17,14 +17,14 @@ const Footer = () => {
                             <div className="mb-4">
                                 <Image
                                     src="/white-logo 1.png"
-                                    alt="The Father's House Logo"
+                                    alt="The Father&apos;s House Logo"
                                     width={251}
                                     height={138}
                                     className="object-contain"
                                 />
                             </div>
                                 <p className={`${dm.className} font-normal text-sm leading-relaxed`}>
-                                The Father's House strongly believes in the lifetime enjoyment of
+                                The Father&apos;s House strongly believes in the lifetime enjoyment of
                                 the love found in the presence of God. We welcome you to our place
                                 of worship and prayer, ensuring that you receive meaningful
                                 sermons, empowering resources, and activities.
@@ -96,7 +96,7 @@ const Footer = () => {
                                 </li>
                                 <li>
                                     <Link href="#fathers" className={`${dm.className} font-medium text-sm`}>
-                                        Father's Menu
+                                        Father&apos;s Menu
                                     </Link>
                                 </li>
                                 <li>

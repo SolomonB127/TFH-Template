@@ -25,7 +25,7 @@ const Newsletter = () => {
                 Subscribe to our newsletter
                 </h2>
                 <p className={`${dm.className} text-sm md:text-xl mb-8 font-medium`}>
-                    Don't worry! We promise not to spam you.
+                    Don&apos;t worry! We promise not to spam you.
                 </p>
                 <form
                 className="flex flex-col items-center justify-center gap-4 md:flex-row"

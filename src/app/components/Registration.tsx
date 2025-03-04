@@ -115,7 +115,7 @@ const Registration = () => {
                     <SelectItem value="other">Other</SelectItem>
                 </SelectContent>
                 </Select>
-                <Button className="bg-[#FF6634] w-[313px] max-w-[500px] h-[60px] mt-4 rounded p-6 hover:bg-[#FF6634]">
+                <Button className={`bg-[#FF6634] w-[313px] max-w-[500px] h-[60px] mt-4 rounded p-6 hover:bg-[#FF6634] text-base font-bold  ${sora.className}`}>
                 Submit
                 </Button>
             </form>

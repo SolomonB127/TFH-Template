@@ -1,6 +1,5 @@
 import { Button } from '@/components/ui/button';
 import { DM_Sans, Sora } from 'next/font/google';
-import Image from 'next/image'
 import React from 'react'
 
 const sora = Sora({ subsets: ["latin"] });
